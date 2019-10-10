@@ -95,7 +95,7 @@ namespace Swashbuckle.AspNetCore.Newtonsoft
             var enumValues = type.GetMembers(BindingFlags.Public | BindingFlags.Static)
                 .Select(enumMember =>
                 {
-                    var enumMemberAttribute = enumMember.GetCustomAttributes<EnumMemberAttribute>().FirstOrDefault();
+                    var enumMemberAttribute = enumMember.GetCustomAttribute<EnumMemberAttribute>();
                     return GetConvertedEnumName(stringEnumConverter, (enumMemberAttribute?.Value ?? enumMember.Name), (enumMemberAttribute?.Value != null));
                 })
                 .Distinct();

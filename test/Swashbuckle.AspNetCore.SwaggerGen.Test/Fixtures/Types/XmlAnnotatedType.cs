@@ -63,18 +63,6 @@ namespace Swashbuckle.AspNetCore.SwaggerGen.Test
         public int BadExampleIntProperty { get; set; }
 
         /// <summary>
-        /// summary for StringField
-        /// </summary>
-        /// <example>example for StringField</example>
-        public string StringField;
-
-        /// <summary>
-        /// summary for BoolField
-        /// </summary>
-        /// <example>true</example>
-        public bool BoolField;
-
-        /// <summary>
         /// summary for AcceptsNothing
         /// </summary>
         public void AcceptsNothing()
